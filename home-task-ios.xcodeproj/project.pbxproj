@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		CE9097B42652BEC1005C6277 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9097B32652BEC1005C6277 /* AppDelegate.swift */; };
-		CE9097B62652BEC1005C6277 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9097B52652BEC1005C6277 /* SceneDelegate.swift */; };
-		CE9097B82652BEC1005C6277 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9097B72652BEC1005C6277 /* ViewController.swift */; };
-		CE9097BB2652BEC1005C6277 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9097B92652BEC1005C6277 /* Main.storyboard */; };
+		CE9097B82652BEC1005C6277 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9097B72652BEC1005C6277 /* FeedViewController.swift */; };
 		CE9097BD2652BEC5005C6277 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9097BC2652BEC5005C6277 /* Assets.xcassets */; };
 		CE9097C02652BEC5005C6277 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9097BE2652BEC5005C6277 /* LaunchScreen.storyboard */; };
 		CE9097CB2652BEC5005C6277 /* home_task_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9097CA2652BEC5005C6277 /* home_task_iosTests.swift */; };
 		CE9097D62652BEC5005C6277 /* home_task_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9097D52652BEC5005C6277 /* home_task_iosUITests.swift */; };
+		CE9097E42652CC46005C6277 /* Sale.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9097E32652CC46005C6277 /* Sale.swift */; };
+		CE9097E62652CD2F005C6277 /* SalesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9097E52652CD2F005C6277 /* SalesRequest.swift */; };
+		CE9097E82652CF0B005C6277 /* SaleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9097E72652CF0B005C6277 /* SaleTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +38,7 @@
 /* Begin PBXFileReference section */
 		CE9097B02652BEC1005C6277 /* home-task-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "home-task-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9097B32652BEC1005C6277 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE9097B52652BEC1005C6277 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE9097B72652BEC1005C6277 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CE9097BA2652BEC1005C6277 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE9097B72652BEC1005C6277 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		CE9097BC2652BEC5005C6277 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE9097BF2652BEC5005C6277 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE9097C12652BEC5005C6277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +48,9 @@
 		CE9097D12652BEC5005C6277 /* home-task-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "home-task-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9097D52652BEC5005C6277 /* home_task_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = home_task_iosUITests.swift; sourceTree = "<group>"; };
 		CE9097D72652BEC5005C6277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE9097E32652CC46005C6277 /* Sale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sale.swift; sourceTree = "<group>"; };
+		CE9097E52652CD2F005C6277 /* SalesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesRequest.swift; sourceTree = "<group>"; };
+		CE9097E72652CF0B005C6277 /* SaleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaleTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				CE9097B32652BEC1005C6277 /* AppDelegate.swift */,
-				CE9097B52652BEC1005C6277 /* SceneDelegate.swift */,
-				CE9097B72652BEC1005C6277 /* ViewController.swift */,
-				CE9097B92652BEC1005C6277 /* Main.storyboard */,
 				CE9097BC2652BEC5005C6277 /* Assets.xcassets */,
-				CE9097BE2652BEC5005C6277 /* LaunchScreen.storyboard */,
+				CE9097B72652BEC1005C6277 /* FeedViewController.swift */,
 				CE9097C12652BEC5005C6277 /* Info.plist */,
+				CE9097BE2652BEC5005C6277 /* LaunchScreen.storyboard */,
+				CE9097E32652CC46005C6277 /* Sale.swift */,
+				CE9097E52652CD2F005C6277 /* SalesRequest.swift */,
+				CE9097E72652CF0B005C6277 /* SaleTableViewCell.swift */,
 			);
 			path = "home-task-ios";
 			sourceTree = "<group>";
@@ -233,7 +236,6 @@
 			files = (
 				CE9097C02652BEC5005C6277 /* LaunchScreen.storyboard in Resources */,
 				CE9097BD2652BEC5005C6277 /* Assets.xcassets in Resources */,
-				CE9097BB2652BEC1005C6277 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +260,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE9097B82652BEC1005C6277 /* ViewController.swift in Sources */,
+				CE9097B82652BEC1005C6277 /* FeedViewController.swift in Sources */,
+				CE9097E82652CF0B005C6277 /* SaleTableViewCell.swift in Sources */,
+				CE9097E42652CC46005C6277 /* Sale.swift in Sources */,
+				CE9097E62652CD2F005C6277 /* SalesRequest.swift in Sources */,
 				CE9097B42652BEC1005C6277 /* AppDelegate.swift in Sources */,
-				CE9097B62652BEC1005C6277 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +300,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CE9097B92652BEC1005C6277 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE9097BA2652BEC1005C6277 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CE9097BE2652BEC5005C6277 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -439,11 +435,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 242ZK2PP95;
 				INFOPLIST_FILE = "home-task-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "SecretEscapes.home-task-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = "home-task-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -458,11 +455,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 242ZK2PP95;
 				INFOPLIST_FILE = "home-task-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "SecretEscapes.home-task-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = "home-task-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
