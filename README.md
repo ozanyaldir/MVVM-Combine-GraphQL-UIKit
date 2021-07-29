@@ -24,4 +24,6 @@ In refactoring, even if you have full freedom, we would like to see solutions th
 
 If you don't manage to implement everything that you'd like to show us, a document is a good solution.
 
+You can send your home-task back to us via email with a zip file.
+
 Have fun!
