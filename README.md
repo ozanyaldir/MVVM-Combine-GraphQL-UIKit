@@ -1,4 +1,4 @@
-#### Secret Escapes home ask for iOS developers
+#### Secret Escapes home task for iOS developers
 
 Welcome to your home task. The goal of this task is to test your general knowledge of the iOS world and your ability to write clean, testable and scalable code.
 
