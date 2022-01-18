@@ -8,13 +8,18 @@ The project has the bare minimum setup for displaying a list of sales retrieved 
 
 #### Requirements
 
-We are expecting you to show us your best by: 
+We are expecting you to show us your best by
 
-* refactoring the architecture using clean, testable (and **tested**), scalable patterns. As you can imagine, our real app is very complex, especially the homepage (sales feed) and it must be stable, flexible to future changes, easy to maintain and scalable
-* adding a loading indicator when loading the sales 
-* adding error feedback for the user in case it fails
-* fixing any irregularities or potential problems that you may see in the code 
-* adding a details screen that gets opened when you click a sale card, and display the title and the `hotelDetails` field, which is part of the GraphQL schema. A fancy UI is not important for us, we are more focused on your approach from the architectural point of view and cleanliness.
+- [ ] Refactoring the architecture using clean, testable (and **tested**), scalable patterns. As you can imagine, our real app is very complex, especially the homepage (sales feed) and it must be stable, flexible to future changes, easy to maintain and scalable
+- [ ] Adding a loading indicator when loading the sales 
+- [ ] Adding error feedback for the user in case it fails
+- [ ] Fixing any irregularities or potential problems that you may see in the code 
+- [ ] Adding a details screen that gets opened when you click a sale card, and display the title and the `hotelDetails` field, which is part of the GraphQL schema. 
+- [ ] Introducing regression avoidance mechanism for your changes
+
+**Note**
+
+A fancy UI is not important to us. We are more focused on your approach from app-architecture and clean code perspectives.
 
 #### Guidelines
 
