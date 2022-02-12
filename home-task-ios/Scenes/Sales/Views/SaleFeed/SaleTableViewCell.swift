@@ -8,8 +8,13 @@
 import UIKit
 
 class SaleTableViewCell: UITableViewCell {
-
     let label = UILabel()
+    
+    var sale: SaleViewModel? {
+        didSet{
+            self.label.text = sale?.title
+        }
+    }
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)

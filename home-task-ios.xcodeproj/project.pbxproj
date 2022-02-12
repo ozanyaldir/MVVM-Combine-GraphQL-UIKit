@@ -14,8 +14,22 @@
 		CE9097CB2652BEC5005C6277 /* home_task_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9097CA2652BEC5005C6277 /* home_task_iosTests.swift */; };
 		CE9097D62652BEC5005C6277 /* home_task_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9097D52652BEC5005C6277 /* home_task_iosUITests.swift */; };
 		CE9097E42652CC46005C6277 /* Sale.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9097E32652CC46005C6277 /* Sale.swift */; };
-		CE9097E62652CD2F005C6277 /* SalesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9097E52652CD2F005C6277 /* SalesRequest.swift */; };
 		CE9097E82652CF0B005C6277 /* SaleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9097E72652CF0B005C6277 /* SaleTableViewCell.swift */; };
+		DA06817927B7B153006850EA /* SaleDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06817827B7B153006850EA /* SaleDTO.swift */; };
+		DA88413227B85CF500FC985F /* NSAttributedString+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA88413127B85CF500FC985F /* NSAttributedString+String.swift */; };
+		DADB5DCD27B7D13900A0BDEC /* SalesFeedResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADB5DCC27B7D13900A0BDEC /* SalesFeedResponseDTO.swift */; };
+		DADB5DCF27B7D43D00A0BDEC /* BaseResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADB5DCE27B7D43D00A0BDEC /* BaseResponseDTO.swift */; };
+		DADB5DD227B7D94900A0BDEC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADB5DD127B7D94900A0BDEC /* BaseViewController.swift */; };
+		DADB5DD727B7DBF600A0BDEC /* SaleFeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADB5DD627B7DBF600A0BDEC /* SaleFeedViewModel.swift */; };
+		DADB5DD927B7DCB800A0BDEC /* SEAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADB5DD827B7DCB800A0BDEC /* SEAPIService.swift */; };
+		DADB5DDB27B7E3D800A0BDEC /* SEAPIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADB5DDA27B7E3D800A0BDEC /* SEAPIConstants.swift */; };
+		DADB5DDF27B7E5D900A0BDEC /* BaseQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADB5DDE27B7E5D900A0BDEC /* BaseQuery.swift */; };
+		DADB5DE127B7E61700A0BDEC /* SalesFeedQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADB5DE027B7E61700A0BDEC /* SalesFeedQuery.swift */; };
+		DADB5DE527B7F89D00A0BDEC /* SEAPIRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADB5DE427B7F89D00A0BDEC /* SEAPIRepository.swift */; };
+		DADB5DE727B7FD2A00A0BDEC /* SaleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADB5DE627B7FD2A00A0BDEC /* SaleViewModel.swift */; };
+		DADB5DEB27B818BD00A0BDEC /* SaleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADB5DEA27B818BD00A0BDEC /* SaleDetailViewController.swift */; };
+		DADB5DED27B818E900A0BDEC /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADB5DEC27B818E900A0BDEC /* FeedView.swift */; };
+		DADB5DEF27B81C0200A0BDEC /* SaleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADB5DEE27B81C0200A0BDEC /* SaleDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +63,22 @@
 		CE9097D52652BEC5005C6277 /* home_task_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = home_task_iosUITests.swift; sourceTree = "<group>"; };
 		CE9097D72652BEC5005C6277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE9097E32652CC46005C6277 /* Sale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sale.swift; sourceTree = "<group>"; };
-		CE9097E52652CD2F005C6277 /* SalesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesRequest.swift; sourceTree = "<group>"; };
 		CE9097E72652CF0B005C6277 /* SaleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaleTableViewCell.swift; sourceTree = "<group>"; };
+		DA06817827B7B153006850EA /* SaleDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaleDTO.swift; sourceTree = "<group>"; };
+		DA88413127B85CF500FC985F /* NSAttributedString+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+String.swift"; sourceTree = "<group>"; };
+		DADB5DCC27B7D13900A0BDEC /* SalesFeedResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesFeedResponseDTO.swift; sourceTree = "<group>"; };
+		DADB5DCE27B7D43D00A0BDEC /* BaseResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponseDTO.swift; sourceTree = "<group>"; };
+		DADB5DD127B7D94900A0BDEC /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		DADB5DD627B7DBF600A0BDEC /* SaleFeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaleFeedViewModel.swift; sourceTree = "<group>"; };
+		DADB5DD827B7DCB800A0BDEC /* SEAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SEAPIService.swift; sourceTree = "<group>"; };
+		DADB5DDA27B7E3D800A0BDEC /* SEAPIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SEAPIConstants.swift; sourceTree = "<group>"; };
+		DADB5DDE27B7E5D900A0BDEC /* BaseQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseQuery.swift; sourceTree = "<group>"; };
+		DADB5DE027B7E61700A0BDEC /* SalesFeedQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesFeedQuery.swift; sourceTree = "<group>"; };
+		DADB5DE427B7F89D00A0BDEC /* SEAPIRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SEAPIRepository.swift; sourceTree = "<group>"; };
+		DADB5DE627B7FD2A00A0BDEC /* SaleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaleViewModel.swift; sourceTree = "<group>"; };
+		DADB5DEA27B818BD00A0BDEC /* SaleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaleDetailViewController.swift; sourceTree = "<group>"; };
+		DADB5DEC27B818E900A0BDEC /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		DADB5DEE27B81C0200A0BDEC /* SaleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaleDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +129,14 @@
 		CE9097B22652BEC1005C6277 /* home-task-ios */ = {
 			isa = PBXGroup;
 			children = (
+				DA88413327B8648B00FC985F /* Scenes */,
+				DA88413027B85CC300FC985F /* Utils */,
+				DADB5DD327B7DB7600A0BDEC /* Services */,
+				DA06817A27B7B270006850EA /* Models */,
 				CE9097B32652BEC1005C6277 /* AppDelegate.swift */,
 				CE9097BC2652BEC5005C6277 /* Assets.xcassets */,
-				CE9097B72652BEC1005C6277 /* FeedViewController.swift */,
 				CE9097C12652BEC5005C6277 /* Info.plist */,
 				CE9097BE2652BEC5005C6277 /* LaunchScreen.storyboard */,
-				CE9097E32652CC46005C6277 /* Sale.swift */,
-				CE9097E52652CD2F005C6277 /* SalesRequest.swift */,
-				CE9097E72652CF0B005C6277 /* SaleTableViewCell.swift */,
 			);
 			path = "home-task-ios";
 			sourceTree = "<group>";
@@ -129,6 +157,116 @@
 				CE9097D72652BEC5005C6277 /* Info.plist */,
 			);
 			path = "home-task-iosUITests";
+			sourceTree = "<group>";
+		};
+		DA06817727B7B139006850EA /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				DA06817827B7B153006850EA /* SaleDTO.swift */,
+				DADB5DCE27B7D43D00A0BDEC /* BaseResponseDTO.swift */,
+				DADB5DCC27B7D13900A0BDEC /* SalesFeedResponseDTO.swift */,
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
+		DA06817A27B7B270006850EA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE9097E32652CC46005C6277 /* Sale.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DA88413027B85CC300FC985F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DA88413127B85CF500FC985F /* NSAttributedString+String.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		DA88413327B8648B00FC985F /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				DA88413427B8649300FC985F /* Sales */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		DA88413427B8649300FC985F /* Sales */ = {
+			isa = PBXGroup;
+			children = (
+				DADB5DD527B7DBD700A0BDEC /* ViewModels */,
+				DADB5DD027B7D93000A0BDEC /* Views */,
+			);
+			path = Sales;
+			sourceTree = "<group>";
+		};
+		DADB5DD027B7D93000A0BDEC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DADB5DE827B8189400A0BDEC /* SaleFeed */,
+				DADB5DE927B818A500A0BDEC /* SaleDetail */,
+				DADB5DD127B7D94900A0BDEC /* BaseViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DADB5DD327B7DB7600A0BDEC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DADB5DD427B7DB8F00A0BDEC /* SEAPIService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DADB5DD427B7DB8F00A0BDEC /* SEAPIService */ = {
+			isa = PBXGroup;
+			children = (
+				DADB5DDD27B7E5CC00A0BDEC /* Queries */,
+				DA06817727B7B139006850EA /* DTOs */,
+				DADB5DD827B7DCB800A0BDEC /* SEAPIService.swift */,
+				DADB5DDA27B7E3D800A0BDEC /* SEAPIConstants.swift */,
+				DADB5DE427B7F89D00A0BDEC /* SEAPIRepository.swift */,
+			);
+			path = SEAPIService;
+			sourceTree = "<group>";
+		};
+		DADB5DD527B7DBD700A0BDEC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DADB5DD627B7DBF600A0BDEC /* SaleFeedViewModel.swift */,
+				DADB5DE627B7FD2A00A0BDEC /* SaleViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DADB5DDD27B7E5CC00A0BDEC /* Queries */ = {
+			isa = PBXGroup;
+			children = (
+				DADB5DDE27B7E5D900A0BDEC /* BaseQuery.swift */,
+				DADB5DE027B7E61700A0BDEC /* SalesFeedQuery.swift */,
+			);
+			path = Queries;
+			sourceTree = "<group>";
+		};
+		DADB5DE827B8189400A0BDEC /* SaleFeed */ = {
+			isa = PBXGroup;
+			children = (
+				CE9097B72652BEC1005C6277 /* FeedViewController.swift */,
+				CE9097E72652CF0B005C6277 /* SaleTableViewCell.swift */,
+				DADB5DEC27B818E900A0BDEC /* FeedView.swift */,
+			);
+			path = SaleFeed;
+			sourceTree = "<group>";
+		};
+		DADB5DE927B818A500A0BDEC /* SaleDetail */ = {
+			isa = PBXGroup;
+			children = (
+				DADB5DEA27B818BD00A0BDEC /* SaleDetailViewController.swift */,
+				DADB5DEE27B81C0200A0BDEC /* SaleDetailView.swift */,
+			);
+			path = SaleDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,9 +399,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE9097B82652BEC1005C6277 /* FeedViewController.swift in Sources */,
+				DADB5DE727B7FD2A00A0BDEC /* SaleViewModel.swift in Sources */,
+				DA88413227B85CF500FC985F /* NSAttributedString+String.swift in Sources */,
+				DADB5DCF27B7D43D00A0BDEC /* BaseResponseDTO.swift in Sources */,
+				DADB5DDB27B7E3D800A0BDEC /* SEAPIConstants.swift in Sources */,
+				DADB5DDF27B7E5D900A0BDEC /* BaseQuery.swift in Sources */,
+				DADB5DCD27B7D13900A0BDEC /* SalesFeedResponseDTO.swift in Sources */,
+				DADB5DE127B7E61700A0BDEC /* SalesFeedQuery.swift in Sources */,
 				CE9097E82652CF0B005C6277 /* SaleTableViewCell.swift in Sources */,
+				DA06817927B7B153006850EA /* SaleDTO.swift in Sources */,
+				DADB5DD927B7DCB800A0BDEC /* SEAPIService.swift in Sources */,
+				DADB5DD227B7D94900A0BDEC /* BaseViewController.swift in Sources */,
+				DADB5DED27B818E900A0BDEC /* FeedView.swift in Sources */,
+				DADB5DEF27B81C0200A0BDEC /* SaleDetailView.swift in Sources */,
 				CE9097E42652CC46005C6277 /* Sale.swift in Sources */,
-				CE9097E62652CD2F005C6277 /* SalesRequest.swift in Sources */,
+				DADB5DD727B7DBF600A0BDEC /* SaleFeedViewModel.swift in Sources */,
+				DADB5DEB27B818BD00A0BDEC /* SaleDetailViewController.swift in Sources */,
+				DADB5DE527B7F89D00A0BDEC /* SEAPIRepository.swift in Sources */,
 				CE9097B42652BEC1005C6277 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,14 +585,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 242ZK2PP95;
+				DEVELOPMENT_TEAM = VSQTNZ7WAN;
 				INFOPLIST_FILE = "home-task-ios/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "home-task-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = "home-task-ios-ozanyaldir";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -453,14 +605,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 242ZK2PP95;
+				DEVELOPMENT_TEAM = VSQTNZ7WAN;
 				INFOPLIST_FILE = "home-task-ios/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "home-task-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = "home-task-ios-ozanyaldir";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -473,7 +625,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 242ZK2PP95;
+				DEVELOPMENT_TEAM = VSQTNZ7WAN;
 				INFOPLIST_FILE = "home-task-iosTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -495,7 +647,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 242ZK2PP95;
+				DEVELOPMENT_TEAM = VSQTNZ7WAN;
 				INFOPLIST_FILE = "home-task-iosTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -516,7 +668,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 242ZK2PP95;
+				DEVELOPMENT_TEAM = VSQTNZ7WAN;
 				INFOPLIST_FILE = "home-task-iosUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -536,7 +688,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 242ZK2PP95;
+				DEVELOPMENT_TEAM = VSQTNZ7WAN;
 				INFOPLIST_FILE = "home-task-iosUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
