@@ -17,6 +17,7 @@ class SaleDetailViewController: UIViewController{
     // MARK: Content is not refetching here. Using the viewmodel passed from the sale feed. A spesific query was not found for details.
     init(sale: SaleViewModel) {
         super.init(nibName: nil, bundle: nil)
+        self.saleDetailView.dismissButton.addTarget(self, action: #selector(dismiss(_:)), for: .touchUpInside)
         self.sale = sale
     }
     
@@ -27,7 +28,6 @@ class SaleDetailViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.saleDetailView.dismissButton.addTarget(self, action: #selector(dismiss(_:)), for: .touchUpInside)
     }
     
     override func loadView() {

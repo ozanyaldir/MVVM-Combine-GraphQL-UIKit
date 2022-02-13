@@ -7,15 +7,10 @@
 
 import Foundation
 
-enum SEAPIRepositoryError: Error{
-    case mapping(message: String)
-    case unknown(message: String)
-}
-
-struct SEAPIRepository {
+struct SEAPIRepository: SEAPIRepositoryInterface {
     let apiService = SEAPIService()
     
-    func fetchSalesFeed(affiliate: String, limit: Int, completion: @escaping (Result<[Sale], SEAPIRepositoryError>) -> ()) {
+    func listSales(affiliate: String, limit: Int, completion: @escaping (Result<[Sale], SEAPIRepositoryError>) -> ()) {
         let query = SalesFeedQuery.init(affiliate: affiliate, limit: limit)
         self.apiService.executeQuery(query: query) { (result: Result<SalesFeedResponseDTO, SEAPICallError>) in
             switch result{

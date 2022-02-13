@@ -11,14 +11,14 @@ class FeedView: UIView {
     
     let tableView: UITableView = {
         let tableView = UITableView()
+        let refreshControl = UIRefreshControl()
+        refreshControl.accessibilityIdentifier = "saleFeedTableViewRefreshControl"
+        tableView.refreshControl = refreshControl
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.register(SaleTableViewCell.self, forCellReuseIdentifier: "saleCell")
         tableView.rowHeight = UITableView.automaticDimension
+        tableView.accessibilityIdentifier = "saleFeedTableView"
         return tableView
-    }()
-    let refreshControl: UIRefreshControl = {
-        let refreshControl = UIRefreshControl()
-        return refreshControl
     }()
     
     @available(*, unavailable)
@@ -29,13 +29,9 @@ class FeedView: UIView {
     init() {
         super.init(frame: .zero)
         
-        self.backgroundColor = .systemBackground
-        
         self.addSubview(self.tableView)
         
-        tableView.addSubview(refreshControl)
-        
-        let margins = self.layoutMarginsGuide
+        let margins = self.safeAreaLayoutGuide
         self.tableView.leadingAnchor.constraint(equalTo: margins.leadingAnchor).isActive = true
         self.tableView.trailingAnchor.constraint(equalTo: margins.trailingAnchor).isActive = true
         self.tableView.topAnchor.constraint(equalTo: margins.topAnchor).isActive = true

@@ -19,6 +19,7 @@ class SaleDetailView: UIScrollView {
         let dismissButton = UIButton()
         dismissButton.setTitle("Dismiss", for: .normal)
         dismissButton.setTitleColor(.systemBlue, for: .normal)
+        dismissButton.accessibilityIdentifier = "saleDetailPageDismissButton"
         return dismissButton
     }()
     
@@ -27,11 +28,11 @@ class SaleDetailView: UIScrollView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    // FIXME: Some AutoLayout optimizations can be made here
     init() {
         super.init(frame: .zero)
         
         self.backgroundColor = .systemBackground
+        self.accessibilityIdentifier = "saleDetailPageScrollView"
         
         let stackView = UIStackView()
         stackView.axis = .vertical
@@ -52,12 +53,9 @@ class SaleDetailView: UIScrollView {
         self.addSubview(stackView)
         stackView.setNeedsLayout()
         
-        let margins = self.layoutMarginsGuide
-        stackView.widthAnchor.constraint(equalTo: margins.widthAnchor, constant: -32).isActive = true
-        stackView.centerXAnchor.constraint(equalTo: margins.centerXAnchor).isActive = true
         stackView.widthAnchor.constraint(equalTo: self.widthAnchor, constant: -32).isActive = true
         stackView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-        stackView.topAnchor.constraint(equalTo: self.topAnchor, constant: 24).isActive = true
+        stackView.topAnchor.constraint(equalTo: self.topAnchor, constant: 16).isActive = true
         stackView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
         
     }
@@ -70,8 +68,7 @@ class SaleDetailView: UIScrollView {
         let idLabel = UILabel()
         idLabel.font = UIFont.boldSystemFont(ofSize: 24)
         idLabel.text = sale.id
-        idLabel.lineBreakMode = .byWordWrapping
-        idLabel.numberOfLines = 0
+        idLabel.accessibilityIdentifier = "saleDetailPageIdLabel"
         self.containerVStackView.addArrangedSubview(idLabel)
         
         self.containerVStackView.setCustomSpacing(16.0, after: idLabel)
@@ -80,15 +77,18 @@ class SaleDetailView: UIScrollView {
         titleLabel.text = sale.title
         titleLabel.lineBreakMode = .byWordWrapping
         titleLabel.numberOfLines = 0
+        titleLabel.accessibilityIdentifier = "saleDetailPageTitleLabel"
         self.containerVStackView.addArrangedSubview(titleLabel)
         
         self.containerVStackView.setCustomSpacing(16.0, after: titleLabel)
         
+        // TODO: HTML visualization.
         let detailLabel = UILabel()
         detailLabel.backgroundColor = .white
         detailLabel.attributedText = sale.hotelDetails.htmlToAttributedString
         detailLabel.lineBreakMode = .byWordWrapping
         detailLabel.numberOfLines = 0
+        detailLabel.accessibilityIdentifier = "saleDetailPageDetailLabel"
         self.containerVStackView.addArrangedSubview(detailLabel)
         
         self.setNeedsLayout()

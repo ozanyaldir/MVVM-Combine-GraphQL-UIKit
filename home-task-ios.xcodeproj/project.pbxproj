@@ -17,6 +17,25 @@
 		CE9097E82652CF0B005C6277 /* SaleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9097E72652CF0B005C6277 /* SaleTableViewCell.swift */; };
 		DA06817927B7B153006850EA /* SaleDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06817827B7B153006850EA /* SaleDTO.swift */; };
 		DA88413227B85CF500FC985F /* NSAttributedString+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA88413127B85CF500FC985F /* NSAttributedString+String.swift */; };
+		DAC6A9D327B943F9005577D3 /* SEAPIRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6A9D227B943F9005577D3 /* SEAPIRepositoryInterface.swift */; };
+		DAC6A9D527B9441A005577D3 /* SEAPIMockRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6A9D427B9441A005577D3 /* SEAPIMockRepository.swift */; };
+		DAC6A9D727B94C17005577D3 /* sale-list.json in Resources */ = {isa = PBXBuildFile; fileRef = DAC6A9D627B94C17005577D3 /* sale-list.json */; };
+		DAC6A9D927B954DA005577D3 /* SEAPIMockRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6A9D427B9441A005577D3 /* SEAPIMockRepository.swift */; };
+		DAC6A9DA27B9557D005577D3 /* Sale.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9097E32652CC46005C6277 /* Sale.swift */; };
+		DAC6A9DB27B95597005577D3 /* SEAPIRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6A9D227B943F9005577D3 /* SEAPIRepositoryInterface.swift */; };
+		DAC6A9DC27B955C0005577D3 /* BaseQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADB5DDE27B7E5D900A0BDEC /* BaseQuery.swift */; };
+		DAC6A9DD27B955C5005577D3 /* SalesFeedQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADB5DE027B7E61700A0BDEC /* SalesFeedQuery.swift */; };
+		DAC6A9DE27B955C8005577D3 /* sale-list.json in Resources */ = {isa = PBXBuildFile; fileRef = DAC6A9D627B94C17005577D3 /* sale-list.json */; };
+		DAC6A9DF27B955CC005577D3 /* SEAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADB5DD827B7DCB800A0BDEC /* SEAPIService.swift */; };
+		DAC6A9E027B955CE005577D3 /* SEAPIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADB5DDA27B7E3D800A0BDEC /* SEAPIConstants.swift */; };
+		DAC6A9E127B955D1005577D3 /* SEAPIRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADB5DE427B7F89D00A0BDEC /* SEAPIRepository.swift */; };
+		DAC6A9E227B955ED005577D3 /* SaleDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06817827B7B153006850EA /* SaleDTO.swift */; };
+		DAC6A9E327B955F0005577D3 /* BaseResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADB5DCE27B7D43D00A0BDEC /* BaseResponseDTO.swift */; };
+		DAC6A9E427B955F3005577D3 /* SalesFeedResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADB5DCC27B7D13900A0BDEC /* SalesFeedResponseDTO.swift */; };
+		DAC6A9E727B95E4B005577D3 /* SaleFeedPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6A9E627B95E4B005577D3 /* SaleFeedPageObject.swift */; };
+		DAC6A9E927B95E7B005577D3 /* BasePageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6A9E827B95E7B005577D3 /* BasePageObject.swift */; };
+		DAC6A9EB27B9617A005577D3 /* SaleDetailsPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6A9EA27B9617A005577D3 /* SaleDetailsPageObject.swift */; };
+		DAC6A9EE27B96A4B005577D3 /* SEAPIRepositoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6A9ED27B96A4B005577D3 /* SEAPIRepositoryFactory.swift */; };
 		DADB5DCD27B7D13900A0BDEC /* SalesFeedResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADB5DCC27B7D13900A0BDEC /* SalesFeedResponseDTO.swift */; };
 		DADB5DCF27B7D43D00A0BDEC /* BaseResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADB5DCE27B7D43D00A0BDEC /* BaseResponseDTO.swift */; };
 		DADB5DD227B7D94900A0BDEC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADB5DD127B7D94900A0BDEC /* BaseViewController.swift */; };
@@ -66,6 +85,13 @@
 		CE9097E72652CF0B005C6277 /* SaleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaleTableViewCell.swift; sourceTree = "<group>"; };
 		DA06817827B7B153006850EA /* SaleDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaleDTO.swift; sourceTree = "<group>"; };
 		DA88413127B85CF500FC985F /* NSAttributedString+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+String.swift"; sourceTree = "<group>"; };
+		DAC6A9D227B943F9005577D3 /* SEAPIRepositoryInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SEAPIRepositoryInterface.swift; sourceTree = "<group>"; };
+		DAC6A9D427B9441A005577D3 /* SEAPIMockRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SEAPIMockRepository.swift; sourceTree = "<group>"; };
+		DAC6A9D627B94C17005577D3 /* sale-list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "sale-list.json"; sourceTree = "<group>"; };
+		DAC6A9E627B95E4B005577D3 /* SaleFeedPageObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaleFeedPageObject.swift; sourceTree = "<group>"; };
+		DAC6A9E827B95E7B005577D3 /* BasePageObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePageObject.swift; sourceTree = "<group>"; };
+		DAC6A9EA27B9617A005577D3 /* SaleDetailsPageObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaleDetailsPageObject.swift; sourceTree = "<group>"; };
+		DAC6A9ED27B96A4B005577D3 /* SEAPIRepositoryFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SEAPIRepositoryFactory.swift; sourceTree = "<group>"; };
 		DADB5DCC27B7D13900A0BDEC /* SalesFeedResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesFeedResponseDTO.swift; sourceTree = "<group>"; };
 		DADB5DCE27B7D43D00A0BDEC /* BaseResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponseDTO.swift; sourceTree = "<group>"; };
 		DADB5DD127B7D94900A0BDEC /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -153,6 +179,7 @@
 		CE9097D42652BEC5005C6277 /* home-task-iosUITests */ = {
 			isa = PBXGroup;
 			children = (
+				DAC6A9E527B95E31005577D3 /* PageObjects */,
 				CE9097D52652BEC5005C6277 /* home_task_iosUITests.swift */,
 				CE9097D72652BEC5005C6277 /* Info.plist */,
 			);
@@ -202,6 +229,24 @@
 			path = Sales;
 			sourceTree = "<group>";
 		};
+		DAC6A9E527B95E31005577D3 /* PageObjects */ = {
+			isa = PBXGroup;
+			children = (
+				DAC6A9E627B95E4B005577D3 /* SaleFeedPageObject.swift */,
+				DAC6A9EA27B9617A005577D3 /* SaleDetailsPageObject.swift */,
+				DAC6A9E827B95E7B005577D3 /* BasePageObject.swift */,
+			);
+			path = PageObjects;
+			sourceTree = "<group>";
+		};
+		DAC6A9EC27B96A35005577D3 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				DAC6A9ED27B96A4B005577D3 /* SEAPIRepositoryFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
 		DADB5DD027B7D93000A0BDEC /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,11 +268,14 @@
 		DADB5DD427B7DB8F00A0BDEC /* SEAPIService */ = {
 			isa = PBXGroup;
 			children = (
+				DAC6A9EC27B96A35005577D3 /* Factories */,
 				DADB5DDD27B7E5CC00A0BDEC /* Queries */,
 				DA06817727B7B139006850EA /* DTOs */,
 				DADB5DD827B7DCB800A0BDEC /* SEAPIService.swift */,
 				DADB5DDA27B7E3D800A0BDEC /* SEAPIConstants.swift */,
 				DADB5DE427B7F89D00A0BDEC /* SEAPIRepository.swift */,
+				DAC6A9D427B9441A005577D3 /* SEAPIMockRepository.swift */,
+				DAC6A9D227B943F9005577D3 /* SEAPIRepositoryInterface.swift */,
 			);
 			path = SEAPIService;
 			sourceTree = "<group>";
@@ -246,6 +294,7 @@
 			children = (
 				DADB5DDE27B7E5D900A0BDEC /* BaseQuery.swift */,
 				DADB5DE027B7E61700A0BDEC /* SalesFeedQuery.swift */,
+				DAC6A9D627B94C17005577D3 /* sale-list.json */,
 			);
 			path = Queries;
 			sourceTree = "<group>";
@@ -372,6 +421,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAC6A9D727B94C17005577D3 /* sale-list.json in Resources */,
 				CE9097C02652BEC5005C6277 /* LaunchScreen.storyboard in Resources */,
 				CE9097BD2652BEC5005C6277 /* Assets.xcassets in Resources */,
 			);
@@ -388,6 +438,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAC6A9DE27B955C8005577D3 /* sale-list.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,13 +458,16 @@
 				DADB5DCD27B7D13900A0BDEC /* SalesFeedResponseDTO.swift in Sources */,
 				DADB5DE127B7E61700A0BDEC /* SalesFeedQuery.swift in Sources */,
 				CE9097E82652CF0B005C6277 /* SaleTableViewCell.swift in Sources */,
+				DAC6A9EE27B96A4B005577D3 /* SEAPIRepositoryFactory.swift in Sources */,
 				DA06817927B7B153006850EA /* SaleDTO.swift in Sources */,
 				DADB5DD927B7DCB800A0BDEC /* SEAPIService.swift in Sources */,
 				DADB5DD227B7D94900A0BDEC /* BaseViewController.swift in Sources */,
 				DADB5DED27B818E900A0BDEC /* FeedView.swift in Sources */,
+				DAC6A9D527B9441A005577D3 /* SEAPIMockRepository.swift in Sources */,
 				DADB5DEF27B81C0200A0BDEC /* SaleDetailView.swift in Sources */,
 				CE9097E42652CC46005C6277 /* Sale.swift in Sources */,
 				DADB5DD727B7DBF600A0BDEC /* SaleFeedViewModel.swift in Sources */,
+				DAC6A9D327B943F9005577D3 /* SEAPIRepositoryInterface.swift in Sources */,
 				DADB5DEB27B818BD00A0BDEC /* SaleDetailViewController.swift in Sources */,
 				DADB5DE527B7F89D00A0BDEC /* SEAPIRepository.swift in Sources */,
 				CE9097B42652BEC1005C6277 /* AppDelegate.swift in Sources */,
@@ -432,6 +486,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAC6A9DB27B95597005577D3 /* SEAPIRepositoryInterface.swift in Sources */,
+				DAC6A9E727B95E4B005577D3 /* SaleFeedPageObject.swift in Sources */,
+				DAC6A9DC27B955C0005577D3 /* BaseQuery.swift in Sources */,
+				DAC6A9E327B955F0005577D3 /* BaseResponseDTO.swift in Sources */,
+				DAC6A9E427B955F3005577D3 /* SalesFeedResponseDTO.swift in Sources */,
+				DAC6A9D927B954DA005577D3 /* SEAPIMockRepository.swift in Sources */,
+				DAC6A9DD27B955C5005577D3 /* SalesFeedQuery.swift in Sources */,
+				DAC6A9DA27B9557D005577D3 /* Sale.swift in Sources */,
+				DAC6A9EB27B9617A005577D3 /* SaleDetailsPageObject.swift in Sources */,
+				DAC6A9DF27B955CC005577D3 /* SEAPIService.swift in Sources */,
+				DAC6A9E227B955ED005577D3 /* SaleDTO.swift in Sources */,
+				DAC6A9E027B955CE005577D3 /* SEAPIConstants.swift in Sources */,
+				DAC6A9E127B955D1005577D3 /* SEAPIRepository.swift in Sources */,
+				DAC6A9E927B95E7B005577D3 /* BasePageObject.swift in Sources */,
 				CE9097D62652BEC5005C6277 /* home_task_iosUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

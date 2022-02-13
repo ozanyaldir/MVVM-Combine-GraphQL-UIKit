@@ -7,36 +7,90 @@
 
 import XCTest
 
-class home_task_iosUITests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
+class when_app_is_launched: XCTestCase {
+    var app: XCUIApplication!
+    var saleFeedPageObject: SaleFeedPageObject!
+    var saleDetailsPageObject: SaleDetailsPageObject!
+    
+    override func setUp() {
+        app = XCUIApplication()
+        saleFeedPageObject = SaleFeedPageObject(app: app)
+        saleDetailsPageObject = SaleDetailsPageObject(app: app)
         continueAfterFailure = false
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
+        app.launchEnvironment = ["ENV": "TEST"]
         app.launch()
-
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
     }
+    
+    func test_should_display_sales_feed_table_view(){
+        let _ = self.saleFeedPageObject.saleFeedTableView.waitForExistence(timeout: 2.0)
+        XCTAssertTrue(self.saleFeedPageObject.saleFeedTableView.exists)
+    }
+    
+    func test_should_display_sales_feed_items_filled(){
+        let _ = self.saleFeedPageObject.saleFeedTableView.waitForExistence(timeout: 2.0)
+        XCTAssertEqual(self.saleFeedPageObject.saleFeedTableView.cells.count, 1)
+    }
+    
+    func test_should_refresh_sales_feed(){
+        let _ = self.saleFeedPageObject.saleFeedTableView.waitForExistence(timeout: 2.0)
+        let firstCell = self.saleFeedPageObject.saleFeedTableView.cells.firstMatch
+        let start = firstCell.coordinate(withNormalizedOffset: CGVector(dx: 0, dy: 0))
+        let finish = firstCell.coordinate(withNormalizedOffset: CGVector(dx: 0, dy: 10))
+        start.press(forDuration: 0, thenDragTo: finish)
+        XCTAssertTrue(self.saleFeedPageObject.saleFeedTableView.exists)
+        XCTAssertEqual(self.saleFeedPageObject.saleFeedTableView.cells.count, 1)
+    }
+    
+}
 
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
-        }
+class when_sale_feed_is_displayed: XCTestCase {
+    var app: XCUIApplication!
+    var saleFeedPageObject: SaleFeedPageObject!
+    var saleDetailsPageObject: SaleDetailsPageObject!
+    
+    override func setUp() {
+        app = XCUIApplication()
+        saleFeedPageObject = SaleFeedPageObject(app: app)
+        saleDetailsPageObject = SaleDetailsPageObject(app: app)
+        continueAfterFailure = false
+        app.launchEnvironment = ["ENV": "TEST"]
+        app.launch()
+        
+        let _ = self.saleFeedPageObject.saleFeedTableView.waitForExistence(timeout: 2.0)
+        self.saleFeedPageObject.saleFeedTableView.cells.element(boundBy: 0).tap()
+    }
+    
+    func test_should_display_sale_details_page(){
+        let _ = self.saleDetailsPageObject.scrollView.waitForExistence(timeout: 2.0)
+        XCTAssertTrue(self.saleDetailsPageObject.scrollView.exists)
+    }
+    
+    func test_should_display_sale_details_page_content(){
+        let _ = self.saleDetailsPageObject.scrollView.waitForExistence(timeout: 2.0)
+        XCTAssertTrue(self.saleDetailsPageObject.idLabel.exists)
+        XCTAssertTrue(self.saleDetailsPageObject.titleLabel.exists)
+        XCTAssertTrue(self.saleDetailsPageObject.detailLabel.exists)
+    }
+    
+    func test_should_dismiss_sale_details_page(){
+        let _ = self.saleDetailsPageObject.scrollView.waitForExistence(timeout: 2.0)
+        XCTAssertTrue(self.saleDetailsPageObject.dismissButton.exists)
+        self.saleDetailsPageObject.dismissButton.tap()
+        XCTAssertFalse(self.saleDetailsPageObject.scrollView.exists)
     }
 }
+
+//let apiRepository = SEAPIRepositoryFactory.createSEAPIRepository()
+//apiRepository.listSales(affiliate: "es", limit: 300) { result in
+//    switch result{
+//    case .success(let sales):
+//        guard let firstMatch = sales.first else{
+//            return XCTFail()
+//        }
+//        print("sales: \(sales.first?.id)")
+//
+//    case .failure(let error):
+//        return XCTFail("Error occured fetching sales feed \(error.localizedDescription)")
+//    }
+//}

@@ -8,6 +8,7 @@
 import XCTest
 @testable import home_task_ios
 
+// TODO: Couldn't find the time to go in TDD way or write the Unit tests. Only written the UI tests yet.
 class home_task_iosTests: XCTestCase {
 
     // TIME TO CREATE SOME TESTS!

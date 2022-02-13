@@ -18,7 +18,7 @@ class FeedViewController: BaseViewController {
         super.init(nibName: nil, bundle: nil)
         self.feedView.tableView.dataSource = self
         self.feedView.tableView.delegate = self
-        self.feedView.refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
+        self.feedView.tableView.refreshControl?.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
         
         self.setupObservers()
     }
@@ -57,10 +57,10 @@ class FeedViewController: BaseViewController {
         self.viewModel.$isLoading
             .receive(on: DispatchQueue.main)
             .sink(receiveValue: { [weak self] isLoading in
-                if (isLoading == true && !(self?.feedView.refreshControl.isRefreshing ?? false)){
+                if (isLoading == true && !(self?.feedView.tableView.refreshControl?.isRefreshing ?? false)){
                     self?.activityIndicatorBegin()
                 } else if (isLoading == false){
-                    self?.feedView.refreshControl.endRefreshing()
+                    self?.feedView.tableView.refreshControl?.endRefreshing()
                     self?.activityIndicatorEnd()
                 }
             })
@@ -88,7 +88,6 @@ extension FeedViewController: UITableViewDataSource {
 extension FeedViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        
         guard let cell = tableView.cellForRow(at: indexPath) as? SaleTableViewCell,
               let sale = cell.sale else{
                   return self.showErrorAlert(message: "Something went wrong while opening Sale details.", complete: nil)
