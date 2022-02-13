@@ -36,6 +36,7 @@
 		DAC6A9E927B95E7B005577D3 /* BasePageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6A9E827B95E7B005577D3 /* BasePageObject.swift */; };
 		DAC6A9EB27B9617A005577D3 /* SaleDetailsPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6A9EA27B9617A005577D3 /* SaleDetailsPageObject.swift */; };
 		DAC6A9EE27B96A4B005577D3 /* SEAPIRepositoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6A9ED27B96A4B005577D3 /* SEAPIRepositoryFactory.swift */; };
+		DAC6A9EF27B96E6E005577D3 /* SEAPIRepositoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6A9ED27B96A4B005577D3 /* SEAPIRepositoryFactory.swift */; };
 		DADB5DCD27B7D13900A0BDEC /* SalesFeedResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADB5DCC27B7D13900A0BDEC /* SalesFeedResponseDTO.swift */; };
 		DADB5DCF27B7D43D00A0BDEC /* BaseResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADB5DCE27B7D43D00A0BDEC /* BaseResponseDTO.swift */; };
 		DADB5DD227B7D94900A0BDEC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADB5DD127B7D94900A0BDEC /* BaseViewController.swift */; };
@@ -487,6 +488,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAC6A9DB27B95597005577D3 /* SEAPIRepositoryInterface.swift in Sources */,
+				DAC6A9EF27B96E6E005577D3 /* SEAPIRepositoryFactory.swift in Sources */,
 				DAC6A9E727B95E4B005577D3 /* SaleFeedPageObject.swift in Sources */,
 				DAC6A9DC27B955C0005577D3 /* BaseQuery.swift in Sources */,
 				DAC6A9E327B955F0005577D3 /* BaseResponseDTO.swift in Sources */,
