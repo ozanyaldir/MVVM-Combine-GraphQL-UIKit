@@ -20,7 +20,6 @@ struct SEAPIMockRepository: SEAPIRepositoryInterface {
             guard let sales = saleDTOs?.map(Sale.init) else {
                 fatalError("Failed mapping mock Sales Feed DTOs")
             }
-            print("sales \(sales)")
             return completion(.success(sales))
         } catch {
             fatalError("Could not parse mock sales feed")

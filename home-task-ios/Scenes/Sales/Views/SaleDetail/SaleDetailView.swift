@@ -9,7 +9,7 @@ import UIKit
 
 class SaleDetailView: UIScrollView {
     
-    let containerVStackView: UIStackView = {
+    private let containerVStackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
         return stackView
@@ -91,7 +91,7 @@ class SaleDetailView: UIScrollView {
         detailLabel.accessibilityIdentifier = "saleDetailPageDetailLabel"
         self.containerVStackView.addArrangedSubview(detailLabel)
         
-        self.setNeedsLayout()
+        self.layoutSubviews()
     }
     
 }

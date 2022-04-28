@@ -10,15 +10,15 @@ import UIKit
 
 class SaleDetailViewController: UIViewController{
     
-    var sale: SaleViewModel!
+    private(set) var sale: SaleViewModel!
     private let saleDetailView = SaleDetailView()
     
     
     // MARK: Content is not refetching here. Using the viewmodel passed from the sale feed. A spesific query was not found for details.
     init(sale: SaleViewModel) {
+        self.sale = sale
         super.init(nibName: nil, bundle: nil)
         self.saleDetailView.dismissButton.addTarget(self, action: #selector(dismiss(_:)), for: .touchUpInside)
-        self.sale = sale
     }
     
     @available(*, unavailable)
